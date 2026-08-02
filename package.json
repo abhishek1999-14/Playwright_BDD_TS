@@ -1,0 +1,38 @@
+{
+  "name": "playwright_ts_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bdd": "npx bddgen",
+    "smoke": "npx bddgen && npx playwright test --project=smoke --headed",
+    "sanity": "npx bddgen && npx playwright test --project=sanity --headed",
+    "regression": "npx bddgen && npx playwright test --project=regression-chrome",
+    "regression:all": "npx bddgen && npx playwright test --project=regression-chrome --project=regression-firefox",
+    "test:all": "npx bddgen && npx playwright test",
+    "report": "npx playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@faker-js/faker": "^10.4.0",
+    "@playwright/test": "^1.60.0",
+    "@types/allure-js-commons": "^0.0.4",
+    "@types/node": "^25.9.1",
+    "allure-commandline": "^2.43.0",
+    "allure-cucumberjs": "^3.9.0",
+    "allure-playwright": "^3.10.2",
+    "dotenv": "^17.4.2",
+    "i": "^0.3.7",
+    "npm": "^11.19.0",
+    "playwright": "1.60.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0",
+    "playwright-bdd": "^8.5.1"
+  }
+}
